@@ -10,17 +10,22 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
+@syntax-hue:          260;
+@syntax-saturation:   5%;
+@syntax-brightness:   16%;
+
+// Monochrome -----------------------------------
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color: hsl(@syntax-hue, 14%, 61%); // default text
+@text-color-subtle:    hsl(@syntax-hue,0%,50%);
+@text-color-highlight: hsl(@syntax-hue,0%,94%);
+@text-color-selected:  hsl(@syntax-hue,0%,100%);
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-info:    #ff51c1;
+@text-color-success: #6fabf1;
+@text-color-warning: #87d7ff;
+@text-color-error:   #af87ff;
 
 // Background colors
 @background-color-info:    hsl(208, 100%, 50%);
@@ -33,8 +38,8 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: #19171a;
+@base-border-color:     darken(@base-background-color, 4%);
 
 // Component colors
 @pane-item-background-color: @base-background-color;
@@ -63,18 +68,18 @@
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: lighten(@tab-bar-background-color, 7%);
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
-@ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
+@ui-site-color-1: #87d7ff; // blue
+@ui-site-color-2: #8b91d1; // green
+@ui-site-color-3: #d7d7ff; // orange
+@ui-site-color-4: #ff00a7; // pink
+@ui-site-color-5: #ff51c1; // yellow
 
 // Sizes
 @font-size: 12px;
@@ -91,4 +96,4 @@
 
 // Misc
 @component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
